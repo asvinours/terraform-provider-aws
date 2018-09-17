@@ -311,7 +311,7 @@ func TestAccAWSElasticacheReplicationGroup_redisClusterInVpc2(t *testing.T) {
 					resource.TestCheckResourceAttr(
 						"aws_elasticache_replication_group.bar", "number_cache_clusters", "2"),
 					resource.TestCheckResourceAttr(
-						"aws_elasticache_replication_group.bar", "automatic_failover_enabled", "true"),
+						"aws_elasticache_replication_group.bar", "automatic_failover_enabled", "false"),
 					resource.TestCheckResourceAttr(
 						"aws_elasticache_replication_group.bar", "snapshot_window", "02:00-03:00"),
 					resource.TestCheckResourceAttr(
